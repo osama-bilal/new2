@@ -43,8 +43,3 @@ xtr.columns = xtr.columns.astype(str)
 ytr = ytr.astype(str)
 yts=yts.astype(str)
 m.fit(xtr,ytr)
-yp=m.predict(xts)
-print("train Accuracy = ", m.score(xtr,ytr))
-print("test Accuracy  = ", m.score(xts,yts))
-print(accuracy_score(yts,yp))
-
